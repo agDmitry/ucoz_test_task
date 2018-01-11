@@ -1,0 +1,35 @@
+.User {
+  border: 1px solid $theme.colors.brand['500'];
+  transition-property: transform, box-shadow;
+  transition-duration: $theme.transition-duration;
+
+  &:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 5px 0px $theme.colors.grey['800'];
+  }
+
+  &__header {
+    cursor: pointer;
+    border-bottom: 1px solid $theme.colors.brand['400'];
+    background-color: $theme.colors.brand['500'];
+    color: $theme.colors.white;
+    height: 2rem;
+    font-weight: bold;
+    line-height: 1rem;
+    padding: $theme.spacings.sm;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $theme.colors.brand['400'];
+    }
+  }
+
+  &__content {
+    padding: $theme.spacings.sm;
+    background-color: $theme.colors.white;
+
+    &>*:not( :last-child ) {
+      margin-bottom: $theme.spacings.md;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+html {
+  font-family: $theme.font.family;
+  font-size: $theme.font.size
+  color: rgba( 
+    $theme.colors.black,
+      $theme.text-opacity-levels.black
+  );
+}
+
+#react-root {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  &:link {
+    color: $theme.colors.brand['500'];
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $theme.colors.brand['600'];
+  }
+
+  &:hover {
+    color: $theme.colors.brand['400'];
+    text-decoration: underline;
+  }
+}

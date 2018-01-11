@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "module": "ES6",
+    "target": "ES5",
+    "jsx": "react",
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": {
+      "app/*": ["src/*"],
+    },
+    "lib": ["es2017", "dom"],
+  },
+  "exclude": [
+    "./node_modules/*",
+    "./build/*",
+    "./lib/*"
+  ]
+}

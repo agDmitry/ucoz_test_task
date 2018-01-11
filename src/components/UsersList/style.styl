@@ -1,0 +1,22 @@
+.Users-List {
+  .Panel__content {
+    @media (min-width: 720px) and (max-width: 1024px) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1720px) {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    @media (min-width: 1720px) {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    &>*:not( :last-child ) {
+      margin-bottom: $theme.spacings.md;
+    }
+  }
+}

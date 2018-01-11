@@ -1,0 +1,17 @@
+.Album {
+  display: block;
+  transition-property: transform, box-shadow;
+  transition-duration: $theme.transition-duration;
+  padding: $theme.spacings.sm
+  background-color: $theme.colors.white;
+  border: 1px solid $theme.colors.grey['600'];
+
+  &:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 5px 0px $theme.colors.grey['800'];
+  }
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
+}
